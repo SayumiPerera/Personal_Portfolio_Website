@@ -89,6 +89,13 @@ body {
     z-index: 4;
 }
 
+.about{
+    text-align:center;
+    padding:20px;
+    line-height: 50px;
+
+}
+
 /* Hover = open door + hide text */
 .door:hover .gate {
     transform: perspective(1400px) rotateY(75deg);
