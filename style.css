@@ -1,107 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+text-decoration:none;
 }
 
-body {
-    min-height: 100vh;
-    background: #111;                /* dark background so door stands out */
-    overflow: hidden;                /* prevent scrollbars */
-    font-family: Arial, Helvetica, sans-serif;
+/*navbar styling*/
+.navbar{
+    position: fixed;
+    width:100%;
+    background:dimgrey;
 }
 
-.container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-/* Door – now fills almost whole viewport (with nice proportions) */
-.door {
-    position: absolute;
-    inset: 0;                        /* top/right/bottom/left = 0 */
-    margin: auto;
-    width:  min(85vw, 520px);        /* max ~520px wide on large screens */
-    height: min(95vh, 780px);        /* taller than wide – door shape */
-    background: gold;
-    border:  min(4vw, 40px) solid white;
-    border-bottom-color: transparent;
-    border-radius:  min(3vw, 28px) min(3vw, 28px) 0 0;
-    box-shadow: 0 0 80px rgba(0,0,0,0.7);
-    overflow: hidden;
-}
-
-/* Text centered on door */
-.door-text {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #000;
-    z-index: 5;
-    transition: all 1.1s ease-out;
-    pointer-events: none;
-}
-
-.door-text h1 {
-    font-size: clamp(3.5rem, 9vw, 7rem);
-    font-weight: 900;
-    margin: 0;
-    line-height: 0.9;
-    text-shadow: 3px 3px 12px rgba(0,0,0,0.4);
-}
-
-.door-text h3 {
-    font-size: clamp(1.6rem, 5vw, 3rem);
-    margin-top: 1vh;
-    font-weight: 400;
-}
-
-/* Red inside + swing */
-.gate {
-    position: absolute;
-    inset: 0;
-    background: #c62828;
-    transform-origin: left center;
-    transform: perspective(1400px) rotateY(0deg);
-    transition: transform 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    backface-visibility: hidden;
-    z-index: 3;
-}
-
-/* Knob */
-.gate::before {
-    content: '';
-    position: absolute;
-    width:  clamp(40px, 6vw, 60px);
-    height: clamp(40px, 6vw, 60px);
-    top: 50%;
-    right: 8%;
-    background: gold;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    box-shadow: inset 0 0 12px rgba(0,0,0,0.5),
-    0 0 25px rgba(255,215,0,0.7);
-    z-index: 4;
-}
-
-.about{
-    text-align:center;
-    padding:20px;
-    line-height: 50px;
-
-}
-
-/* Hover = open door + hide text */
-.door:hover .gate {
-    transform: perspective(1400px) rotateY(75deg);
-}
-
-.door:hover .door-text {
-    opacity: 0;
-    transform: translateY(15%);
-}
+/*.navbar .menu*/
