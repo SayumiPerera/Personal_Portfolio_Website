@@ -415,16 +415,16 @@ section{
         margin: 20px 0;
         font-size: 25px;
     }
-
     .home .home-content .text-2 {
         font-size: 70px;
-
     }
-
     .home .home-content .text-3 {
         font-size: 35px;
-
     }
+    /*.home .home-content a{*/
+    /*    font-size: 20px;*/
+    /*    padding: 9px 25px;*/
+    /*}*/
 }
 
 @media(max-width: 500px){
