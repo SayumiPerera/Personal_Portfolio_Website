@@ -19,6 +19,7 @@ text-decoration:none;
     background:dimgrey;
     font-family:'Montserrat', sans-serif;
     box-shadow: 0px 5px 40px 0px;
+    z-index: 999;
 }
 
 .navbar .max-width{
@@ -50,9 +51,20 @@ text-decoration:none;
 }
 
 .navbar .menu li a:hover{
-    color:black;
+    color:dimgrey;
 }
 
+.navbar.sticky .menu li a:hover{
+    color: cadetblue;
+}
+
+/*menu btn styling*/
+.menu-btn{
+    color: dimgrey;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
 /*main{*/
 /*    position: relative;*/
 /*}*/
@@ -220,4 +232,77 @@ text-decoration:none;
     margin: 5px 0;
     margin-left: 60px;
     text-shadow: 2px 2px 10px rgba(0,0,0,1);
+}
+
+/*responsive media query*/
+
+@media(max-width: 1110px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 990px){
+    .max-width{
+        padding:0 50px;
+
+    }
+}
+
+@media(max-width: 950px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top:0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left:0;
+
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+
+    }
+
+    .home .home-content .text-3 {
+        font-size: 35px;
+
+    }
+}
+
+@media(max-width: 500px){
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 25px;
+
+    }
 }
