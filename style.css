@@ -32,6 +32,10 @@ text-decoration:none;
     font-weight:600;
 }
 
+.navbar .logo a span{
+    color: black;
+}
+
 .navbar .menu li {
     list-style:none;
     display:inline-block;
@@ -42,6 +46,11 @@ text-decoration:none;
     font-size:18px;
     font-weight:500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color:black;
 }
 
 /*main{*/
@@ -95,14 +104,14 @@ text-decoration:none;
 }
 
 .home .home-img img {
-    width: 500px;
+    width: 350px;
     height: auto;
     object-fit: cover;
 }
 
 .dotted-circle {
-    width: 400px;
-    height: 400px;
+    width: 325px;
+    height: 325px;
     border: 5px dotted white; /* Adjust thickness and color here */
     border-radius: 50%;       /* Makes it a perfect circle */
     display: flex;
@@ -113,30 +122,43 @@ text-decoration:none;
 
 .home-img {
     position: relative;
-    width: 450px; /* Size of the total area */
-    height: 450px;
+    width: 375px; /* Size of the total area */
+    height: 375px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-right: -50px;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .home-img {
+        margin: 20px auto; /* Centers the image on mobile */
+    }
 }
 
 .dotted-circle {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: 5px dotted white;
+    border: 6px dotted white;
     border-radius: 50%;
 
-    /* ANIMATE THE CIRCLE ONLY */
     animation: spin 8s linear infinite;
+    z-index: 1;
 }
 
 .center-photo {
-    width: 250px; /* Adjust size as needed */
-    height: 250px;
+    width: 325px; /* Adjust size as needed */
+    height: 325px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 2; /* Keeps photo on top */
+    position: relative;
+    border: 2px solid transparent;
 }
 
 /* Simple Rotation Animation */
@@ -150,7 +172,8 @@ text-decoration:none;
 }
 
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 30px;
+    color:white;
 
 }
 
@@ -158,15 +181,43 @@ text-decoration:none;
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+}
 
+/*.home .home-content .text-2 .last-name {*/
+/*    margin-left: 40px; !* Adjust this number to move it further right *!*/
+/*    color: black;      !* Optional: Change color if you want it to stand out *!*/
+/*    display: inline-block; !* Ensures the margin works correctly *!*/
+/*}*/
+
+
+.home .home-content .text-2 {
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -10px;
+    color: black;
+}
+
+
+.home .home-content .text-2:hover {
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
 }
 
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    margin-left: 50px;
 }
 
 .home .home-content .text-3 span{
     color:white;
     font-weight: 500;
+    font-size: 40px;
+    margin: 5px 0;
+    margin-left: 60px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1);
 }
