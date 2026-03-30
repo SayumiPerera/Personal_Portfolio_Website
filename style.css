@@ -357,6 +357,29 @@ section{
 
 
 
+
+
+
+/*footer section styling*/
+footer{
+    background: black;
+    padding: 20px 25px;
+    color: lightslategrey;
+}
+footer span a{
+    color: dimgrey;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 /*responsive media query*/
 
 @media(max-width: 1330px){
