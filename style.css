@@ -111,7 +111,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto 0 auto 40px;
+    margin: auto ;
 }
 
 .home .home-content {
@@ -143,15 +143,34 @@ html{
     align-items: center;
     justify-content: center;
 
-    margin-right: -50px;
+    margin-right: 0px;
     margin-left: auto;
 }
 
+.home-img .main-img,
+.home-img .hover-img {
+    transition: opacity 0.5s ease;
+}
+
+.home-img .hover-img {
+    position: absolute;
+    opacity: 0; /* Invisible by default */
+    z-index: 3; /* Sits higher than .main-img */
+}
+
+.home-img:hover .hover-img {
+    opacity: 1; /* Shows the hover image */
+}
+
+.home-img:hover .main-img {
+    opacity: 0; /* Hides the original image */
+}
 @media (max-width: 768px) {
     .home-img {
         margin: 20px auto; /* Centers the image on mobile */
     }
 }
+
 
 .dotted-circle {
     position: absolute;
@@ -247,10 +266,10 @@ html{
     border: 2px solid grey;
     transition: all 0.3s ease;
 }
-.max-width{
-    max-width: 800px;
+/*.max-width{*/
+/*    max-width: 800px;*/
 
-}
+/*}*/
 .about .about-content .column{
     width:100%
 }
