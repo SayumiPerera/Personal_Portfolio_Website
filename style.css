@@ -1000,12 +1000,12 @@ footer span a:hover {
         width: clamp(190px, 64vw, 300px); height: clamp(400px, 86vh, 680px);
     }
 
-    /*.ghost-wrap {*/
-    /*    left: 50%;*/
-    /*    transform: translateX(-50%);*/
-    /*    bottom: clamp(420px, 88vh, 700px);*/
-    /*    animation: ghost-float-mobile 3.4s ease-in-out infinite;*/
-    /*}*/
+    .ghost-wrap {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: clamp(420px, 88vh, 700px);
+        animation: ghost-float-mobile 3.4s ease-in-out infinite;
+    }
 
     /*@keyframes ghost-float-mobile {*/
     /*    0%,  100% { transform: translateX(-50%) translateY(0px)   rotate(-3deg); }*/
