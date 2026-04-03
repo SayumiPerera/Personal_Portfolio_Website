@@ -313,6 +313,14 @@ body {
     box-shadow: 0 0 4px rgba(120, 100, 255, 0.7);
 }
 
+.ghost-shadow {
+    width:  clamp(30px, 3.5vw, 50px);
+    height: clamp(6px,  0.8vw, 10px);
+    background: radial-gradient(ellipse, rgba(120, 100, 255, 0.35) 0%, transparent 72%);
+    border-radius: 50%;
+    margin: clamp(5px, 0.8vw, 9px) auto 0;
+    animation: ghost-shadow-pulse 3.4s ease-in-out infinite;
+}
 
 
 
