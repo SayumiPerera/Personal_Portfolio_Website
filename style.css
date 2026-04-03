@@ -561,14 +561,14 @@ body {
     justify-content: center;
 }
 
-/*.glow-ring {*/
-/*    position: absolute;*/
-/*    inset: -14px;*/
-/*    border-radius: 50%;*/
-/*    background: radial-gradient(circle, rgba(200, 80, 0, 0.22) 0%, transparent 70%);*/
-/*    animation: glow-pulse 3s ease-in-out infinite;*/
-/*    z-index: 0;*/
-/*}*/
+.glow-ring {
+    position: absolute;
+    inset: -14px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 80, 0, 0.22) 0%, transparent 70%);
+    animation: glow-pulse 3s ease-in-out infinite;
+    z-index: 0;
+}
 
 /*@keyframes glow-pulse {*/
 /*    0%, 100% { transform: scale(1);     opacity: 0.6; }*/
@@ -594,8 +594,12 @@ body {
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to   {
+        transform: rotate(360deg);
+    }
 }
 
 .center-photo {
@@ -608,10 +612,18 @@ body {
     border: 2px solid transparent;
 }
 
-.home-img .main-img  { transition: opacity 0.5s ease; }
-.home-img .hover-img { position: absolute; opacity: 0; z-index: 3; transition: opacity 0.5s ease; }
-.home-img:hover .hover-img { opacity: 1; }
-.home-img:hover .main-img  { opacity: 0; }
+.home-img .main-img  {
+    transition: opacity 0.5s ease;
+}
+.home-img .hover-img {
+    position: absolute; opacity: 0; z-index: 3; transition: opacity 0.5s ease;
+}
+.home-img:hover .hover-img {
+    opacity: 1;
+}
+.home-img:hover .main-img  {
+    opacity: 0;
+}
 
 
 /*shared section styles*/
@@ -665,9 +677,13 @@ section {
 
 /*about*/
 
-.about { font-family: 'Montserrat', sans-serif; }
+.about {
+    font-family: 'Montserrat', sans-serif;
+}
 
-.about .title::after { content: "Who I am"; }
+.about .title::after {
+    content: "Who I am";
+}
 
 .about .about-content {
     display: flex;
@@ -697,7 +713,9 @@ section {
     box-shadow: 0 0 60px rgba(220, 80, 0, 0.4), inset 0 0 20px rgba(0,0,0,0.4);
 }
 
-.about .about-content .right { width: 55%; }
+.about .about-content .right {
+    width: 55%;
+}
 
 .about .about-content .right .text {
     font-size: 24px;
@@ -706,7 +724,9 @@ section {
     color: #f0c090;
 }
 
-.about .about-content .right .text span { color: #e06020; }
+.about .about-content .right .text span {
+    color: #e06020;
+}
 
 .about .about-content .right p {
     text-align: justify;
