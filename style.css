@@ -322,6 +322,17 @@ body {
     animation: ghost-shadow-pulse 3.4s ease-in-out infinite;
 }
 
+@keyframes ghost-shadow-pulse {
+    0%,  100% {
+        transform: scaleX(1);    opacity: 0.45;
+    }
+    30%        {
+        transform: scaleX(0.65); opacity: 0.18;
+    }
+    60%        {
+        transform: scaleX(0.82); opacity: 0.28;
+    }
+}
 
 
 
