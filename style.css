@@ -180,7 +180,25 @@ body {
     50%       { opacity: 1;   }
 }
 
+.door-wrap:hover .gate {
+    transform: perspective(1400px) rotateY(78deg);
+}
+.door-wrap:hover .door-label {
+    opacity: 0;
+    transform: translateX(20px);
+}
+.door-wrap:hover .knob { opacity: 0; }
 
+#door-overlay.entering .gate {
+    transform: perspective(1400px) rotateY(82deg) !important;
+    transition: transform 4.5s cubic-bezier(0.05, 0.0, 0.1, 1.0) !important;
+}
+#door-overlay.entering .door-label {
+    opacity: 0 !important;
+    transform: translateX(30px) !important;
+}
+#door-overlay.entering .knob      { opacity: 0 !important; }
+#door-overlay.entering .enter-hint { opacity: 0; }
 
 
 
