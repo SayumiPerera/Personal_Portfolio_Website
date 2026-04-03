@@ -343,6 +343,17 @@ body {
     animation: sparkle 2.8s ease-in-out infinite;
 }
 
+.ghost-wrap::before {
+    top: -10px; right: -14px; animation-delay: 0s;
+}
+.ghost-wrap::after  {
+    bottom: 20px; left: -16px; animation-delay: 1.4s; font-size: clamp(6px, 0.8vw, 10px);
+}
+
+
+
+
+
 
 
 
