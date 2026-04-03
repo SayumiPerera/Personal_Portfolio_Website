@@ -224,6 +224,28 @@ body {
     100% { transform: translateY(0px)   rotate(-4deg); }
 }
 
+.ghost-body {
+    position: relative;
+    width:  clamp(52px, 6vw, 82px);
+    height: clamp(68px, 8vw, 104px);
+    background: rgba(210, 225, 255, 0.88);
+    border-radius: 50% 50% 0 0;
+    clip-path: polygon(
+            0%   0%,
+            100% 0%,
+            100% 72%,
+            88%  100%,
+            75%  72%,
+            62%  100%,
+            50%  72%,
+            38%  100%,
+            25%  72%,
+            12%  100%,
+            0%   72%
+    );
+    filter: drop-shadow(0 0 12px rgba(160, 180, 255, 0.7));
+}
+
 
 
 
