@@ -900,15 +900,18 @@ footer span a:hover {
 
 
 @media (max-width: 1105px) {
-    .about .about-content .left img { height: 340px; width: 340px; }
+    .about .about-content .left img { height: 340px; width: 340px;
+    }
 }
 
 @media (max-width: 1100px) {
-    .max-width { padding: 0 40px; }
+    .max-width { padding: 0 40px;
+    }
 }
 
 @media (max-width: 990px) {
-    .max-width { padding: 0 50px; }
+    .max-width { padding: 0 50px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -919,33 +922,63 @@ footer span a:hover {
         padding-bottom: 30px;
         text-align: center;
     }
-    .home-content              { width: 100%; }
-    .home-content .text-3      { margin-left: 0; }
-    .home-content .text-3 span { margin-left: 0; }
+    .home-content              {
+        width: 100%;
+    }
+    .home-content .text-3      {
+        margin-left: 0;
+    }
+    .home-content .text-3 span {
+        margin-left: 0;
+    }
 
     .about .about-content .left,
     .about .about-content .right {
         width: 100%;
     }
-    .about .about-content .left { justify-content: center; }
-    .about .about-content .left img { height: 300px; width: 300px; }
+    .about .about-content .left {
+        justify-content: center;
+    }
+    .about .about-content .left img {
+        height: 300px; width: 300px;
+    }
 
-    .contact .contact-content .column { width: 100%; }
+    .contact .contact-content .column {
+        width: 100%;
+    }
 
-    .door-wrap  { width: clamp(220px, 52vw, 360px); height: clamp(440px, 88vh, 760px); }
-    .ghost-wrap { left: calc(50% + clamp(120px, 30vw, 200px)); bottom: clamp(160px, 38vh, 340px); }
+    .door-wrap  {
+        width: clamp(220px, 52vw, 360px); height: clamp(440px, 88vh, 760px);
+    }
+    .ghost-wrap {
+        left: calc(50% + clamp(120px, 30vw, 200px)); bottom: clamp(160px, 38vh, 340px);
+    }
 }
 
 @media (max-width: 768px) {
-    .max-width      { padding: 0 20px; }
-    .navbar         { padding: 18px 0; }
-    .navbar .logo a { font-size: 26px; }
-    .navbar .menu   { display: none; }
-    .menu-btn       { display: block; }
+    .max-width      {
+        padding: 0 20px;
+    }
+    .navbar         {
+        padding: 18px 0;
+    }
+    .navbar .logo a {
+        font-size: 26px;
+    }
+    .navbar .menu   {
+        display: none;
+    }
+    .menu-btn       {
+        display: block;
+    }
 
-    .home .max-width { gap: 24px; }
+    .home .max-width {
+        gap: 24px;
+    }
 
-    /*.door-wrap  { width: clamp(190px, 64vw, 300px); height: clamp(400px, 86vh, 680px); }*/
+    .door-wrap  {
+        width: clamp(190px, 64vw, 300px); height: clamp(400px, 86vh, 680px);
+    }
 
     /*.ghost-wrap {*/
     /*    left: 50%;*/
@@ -959,13 +992,21 @@ footer span a:hover {
     /*    50%        { transform: translateX(-50%) translateY(-16px) rotate(3deg); }*/
     /*}*/
 
-    .contact .right form .fields { flex-direction: column; gap: 0; }
+    .contact .right form .fields {
+        flex-direction: column; gap: 0;
+    }
 }
 
 @media (max-width: 500px) {
-    .home-content .text-2 { font-size: 1.7rem; }
+    .home-content .text-2 {
+        font-size: 1.7rem;
+    }
     /*.door-wrap { width: min(78vw, 260px); height: min(84vh, 580px); }*/
 
-    .title { font-size: 28px; }
-    .about .about-content .left img { height: 250px; width: 250px; }
+    .title {
+        font-size: 28px;
+    }
+    .about .about-content .left img {
+        height: 250px; width: 250px;
+    }
 }
