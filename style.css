@@ -211,6 +211,19 @@ body {
     transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
+#door-overlay.entering .ghost-wrap,
+#door-overlay.entered  .ghost-wrap {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+@keyframes ghost-float {
+    0%   { transform: translateY(0px)   rotate(-4deg); }
+    30%  { transform: translateY(-18px) rotate(2deg);  }
+    60%  { transform: translateY(-8px)  rotate(-2deg); }
+    100% { transform: translateY(0px)   rotate(-4deg); }
+}
+
 
 
 
