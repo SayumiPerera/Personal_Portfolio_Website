@@ -354,10 +354,6 @@ body {
 
 
 
-
-
-
-
 /*navbar */
 
 .navbar {
@@ -386,9 +382,13 @@ body {
     letter-spacing: 2px;
     text-shadow: 0 0 20px rgba(220, 100, 0, 0.5);
 }
-.navbar .logo a span { color: #e06020; }
+.navbar .logo a span {
+    color: #e06020;
+}
 
-.navbar .menu { display: flex; list-style: none; }
+.navbar .menu {
+    display: flex; list-style: none;
+}
 
 .navbar .menu li a {
     color: #b07050;
@@ -405,13 +405,17 @@ body {
     text-shadow: 0 0 12px rgba(255, 120, 0, 0.6);
 }
 
-.navbar.sticky { background: rgba(5, 1, 0, 0.96); }
+.navbar.sticky {
+    background: rgba(5, 1, 0, 0.96);
+}
 .navbar.sticky .menu li a:hover {
     color: #ff6622;
     text-shadow: 0 0 16px rgba(255, 80, 0, 0.7);
 }
 
-.menu-btn { color: #e07030; font-size: 24px; cursor: pointer; display: none; }
+.menu-btn {
+    color: #e07030; font-size: 24px; cursor: pointer; display: none;
+}
 
 .navbar .menu.open {
     display: flex;
