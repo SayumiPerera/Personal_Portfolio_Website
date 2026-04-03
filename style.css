@@ -200,7 +200,16 @@ body {
 #door-overlay.entering .knob      { opacity: 0 !important; }
 #door-overlay.entering .enter-hint { opacity: 0; }
 
-
+/*ghost*/
+.ghost-wrap {
+    position: absolute;
+    left:   calc(50% + clamp(150px, 18vw, 280px));
+    bottom: clamp(200px, 42vh, 420px);
+    z-index: 8;
+    pointer-events: none;
+    animation: ghost-float 3.4s ease-in-out infinite;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
 
 
 
