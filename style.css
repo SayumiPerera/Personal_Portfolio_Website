@@ -5,7 +5,9 @@
     text-decoration: none;
 }
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -110,8 +112,12 @@ body {
     border: 2px solid #2a1500;
     border-radius: 3px;
 }
-.gate::before { top: 7%;  height: 27%; }
-.gate::after  { top: 40%; height: 32%; }
+.gate::before {
+    top: 7%;  height: 27%;
+}
+.gate::after  {
+    top: 40%; height: 32%;
+}
 
 .knob {
     position: absolute;
@@ -176,8 +182,12 @@ body {
 }
 
 @keyframes pulse-hint {
-    0%, 100% { opacity: 0.3; }
-    50%       { opacity: 1;   }
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50%       {
+        opacity: 1;
+    }
 }
 
 .door-wrap:hover .gate {
@@ -187,7 +197,9 @@ body {
     opacity: 0;
     transform: translateX(20px);
 }
-.door-wrap:hover .knob { opacity: 0; }
+.door-wrap:hover .knob {
+    opacity: 0;
+}
 
 #door-overlay.entering .gate {
     transform: perspective(1400px) rotateY(82deg) !important;
@@ -197,8 +209,12 @@ body {
     opacity: 0 !important;
     transform: translateX(30px) !important;
 }
-#door-overlay.entering .knob      { opacity: 0 !important; }
-#door-overlay.entering .enter-hint { opacity: 0; }
+#door-overlay.entering .knob      {
+    opacity: 0 !important;
+}
+#door-overlay.entering .enter-hint {
+    opacity: 0;
+}
 
 /*ghost*/
 .ghost-wrap {
@@ -218,10 +234,18 @@ body {
 }
 
 @keyframes ghost-float {
-    0%   { transform: translateY(0px)   rotate(-4deg); }
-    30%  { transform: translateY(-18px) rotate(2deg);  }
-    60%  { transform: translateY(-8px)  rotate(-2deg); }
-    100% { transform: translateY(0px)   rotate(-4deg); }
+    0%   {
+        transform: translateY(0px)   rotate(-4deg);
+    }
+    30%  {
+        transform: translateY(-18px) rotate(2deg);
+    }
+    60%  {
+        transform: translateY(-8px)  rotate(-2deg);
+    }
+    100% {
+        transform: translateY(0px)   rotate(-4deg);
+    }
 }
 
 .ghost-body {
@@ -267,6 +291,14 @@ body {
     animation-delay: 0.1s;
 }
 
+@keyframes blink {
+    0%, 90%, 100% {
+        transform: scaleY(1);
+    }
+    95%            {
+        transform: scaleY(0.1);
+    }
+}
 
 
 
