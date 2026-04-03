@@ -334,6 +334,15 @@ body {
     }
 }
 
+.ghost-wrap::before,
+.ghost-wrap::after {
+    content: '✦';
+    position: absolute;
+    color: rgba(180, 200, 255, 0.55);
+    font-size: clamp(8px, 1vw, 13px);
+    animation: sparkle 2.8s ease-in-out infinite;
+}
+
 
 
 
