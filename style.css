@@ -255,6 +255,16 @@ body {
     padding-top: 28%;
 }
 
+.ghost-eye {
+    width:  clamp(9px, 1.1vw, 15px);
+    height: clamp(11px, 1.3vw, 18px);
+    background: #1a0a40;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(120, 100, 255, 0.9);
+    animation: blink 4s ease-in-out infinite;
+}
+
+
 
 
 
