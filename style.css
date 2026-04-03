@@ -149,6 +149,16 @@ body {
     letter-spacing: 3px;
 }
 
+.door-label h4 {
+    font-size: clamp(0.75rem, 1.8vw, 1.2rem);
+    font-weight: 400;
+    color: #cc7722;
+    margin-top: 14px;
+    text-shadow: 0 0 8px #ff4400;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
 
 
 /*navbar */
