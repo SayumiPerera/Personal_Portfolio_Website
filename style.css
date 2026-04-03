@@ -89,7 +89,29 @@ body {
 }
 
 
+.gate {
+    position: absolute;
+    inset: 0;
+    background: #0d0604;
+    transform-origin: left center;
+    transform: perspective(1400px) rotateY(0deg);
+    transition: transform 4.5s cubic-bezier(0.05, 0.0, 0.1, 1.0);
+    z-index: 4;
+    border-radius: 3px 3px 0 0;
+    backface-visibility: hidden;
+}
 
+.gate::before,
+.gate::after {
+    content: '';
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    border: 2px solid #2a1500;
+    border-radius: 3px;
+}
+.gate::before { top: 7%;  height: 27%; }
+.gate::after  { top: 40%; height: 32%; }
 
 
 
