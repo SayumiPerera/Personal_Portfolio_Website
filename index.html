@@ -31,7 +31,26 @@
 
 <body>
 
+<!--ddor overlay-->
 
+<div id="door-overlay">
+
+    <!-- floor light rays -->
+    <svg class="floor-rays"
+         viewBox="0 0 1000 600"
+         xmlns="http://www.w3.org/2000/svg"
+         preserveAspectRatio="xMidYMax meet">
+        <defs>
+            <radialGradient id="rayGrad" cx="50%" cy="0%" r="100%">
+                <stop offset="0%"   stop-color="#c84400" stop-opacity="0.65"/>
+                <stop offset="100%" stop-color="#000"    stop-opacity="0"/>
+            </radialGradient>
+        </defs>
+        <ellipse cx="500" cy="600" rx="130" ry="45" fill="#aa3300" fill-opacity="0.6"/>
+        <polygon points="440,0 560,0 900,600 100,600" fill="url(#rayGrad)" opacity="0.55"/>
+        <polygon points="455,0 545,0 720,600 280,600" fill="url(#rayGrad)" opacity="0.42"/>
+        <polygon points="465,0 535,0 570,600 430,600" fill="url(#rayGrad)" opacity="0.50"/>
+    </svg>
 
 
 
