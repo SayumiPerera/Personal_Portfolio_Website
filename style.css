@@ -20,6 +20,24 @@ body {
     margin: auto;
 }
 
+/*door overlay*/
+#door-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    transition: opacity 1.2s ease, visibility 1.2s ease;
+}
+
+#door-overlay.entered {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 
 
