@@ -39,6 +39,16 @@ body {
     pointer-events: none;
 }
 
+.floor-rays {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 65vh;
+    pointer-events: none;
+}
+
 
 
 
