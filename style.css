@@ -478,7 +478,9 @@ body {
     z-index: 1;
 }
 
-.home-content { width: 55%; }
+.home-content {
+    width: 55%;
+}
 
 .home-content .text-1 {
     font-size: clamp(1.1rem, 2.5vw, 1.8rem);
@@ -930,8 +932,8 @@ footer span a:hover {
 
     .contact .contact-content .column { width: 100%; }
 
-    /*.door-wrap  { width: clamp(220px, 52vw, 360px); height: clamp(440px, 88vh, 760px); }*/
-    /*.ghost-wrap { left: calc(50% + clamp(120px, 30vw, 200px)); bottom: clamp(160px, 38vh, 340px); }*/
+    .door-wrap  { width: clamp(220px, 52vw, 360px); height: clamp(440px, 88vh, 760px); }
+    .ghost-wrap { left: calc(50% + clamp(120px, 30vw, 200px)); bottom: clamp(160px, 38vh, 340px); }
 }
 
 @media (max-width: 768px) {
