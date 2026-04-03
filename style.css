@@ -74,6 +74,20 @@ body {
     pointer-events: none;
 }
 
+.door-frame {
+    position: absolute;
+    inset: 0;
+    border: clamp(10px, 1.5vw, 18px) solid #0d0604;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    box-shadow:
+            0 0 0 3px #ff6a00,
+            0 0 30px 16px #c44200,
+            inset 0 0 0 3px #ff6a00;
+    z-index: 3;
+    pointer-events: none;
+}
+
 
 
 
