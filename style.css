@@ -49,6 +49,18 @@ body {
     pointer-events: none;
 }
 
+.door-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width:  clamp(260px, 30vw, 460px);
+    height: clamp(500px, 92vh, 900px);
+    cursor: default;
+    z-index: 2;
+}
+
+
 
 
 
