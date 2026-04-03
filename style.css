@@ -263,6 +263,10 @@ body {
     box-shadow: 0 0 5px rgba(120, 100, 255, 0.9);
     animation: blink 4s ease-in-out infinite;
 }
+.ghost-eye:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
 
 
 
