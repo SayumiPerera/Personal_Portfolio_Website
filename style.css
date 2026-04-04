@@ -470,6 +470,15 @@ body {
     width: 100%;
 }
 
+/* Left column */
+.home-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex: 1;
+}
+
 
 
 
