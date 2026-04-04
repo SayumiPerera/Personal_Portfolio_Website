@@ -531,7 +531,8 @@ body {
 }
 
 .d-row {
-    display: flex; gap: 4px;
+    display: flex;
+    gap: 4px;
 }
 
 .letter {
@@ -555,8 +556,12 @@ body {
 
 @keyframes letterGlow {
     0% {
-        color: #3a1808; background: #110400; border-color: #1e0a02;
-        box-shadow: none; text-shadow: none; transform: scale(1);
+        color: #3a1808;
+        background: #110400;
+        border-color: #1e0a02;
+        box-shadow: none;
+        text-shadow: none;
+        transform: scale(1);
     }
     7% {
         color: #ffbb66;
@@ -567,12 +572,20 @@ body {
         transform: scale(1.25);
     }
     14% {
-        color: #3a1808; background: #110400; border-color: #1e0a02;
-        box-shadow: none; text-shadow: none; transform: scale(1);
+        color: #3a1808;
+        background: #110400;
+        border-color: #1e0a02;
+        box-shadow: none;
+        text-shadow: none;
+        transform: scale(1);
     }
     100% {
-        color: #3a1808; background: #110400; border-color: #1e0a02;
-        box-shadow: none; text-shadow: none; transform: scale(1);
+        color: #3a1808;
+        background: #110400;
+        border-color: #1e0a02;
+        box-shadow: none;
+        text-shadow: none;
+        transform: scale(1);
     }
 }
 
@@ -594,17 +607,6 @@ body {
 .glow-i {
     animation: letterGlow 6s ease-in-out infinite 5s;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CTA button */
@@ -632,21 +634,17 @@ body {
 
 
 
-
-
-
 /* profile image */
 /* Right column: photo */
-/*.home-img {*/
-/*    position: relative;*/
-/*    flex-shrink: 0;*/
-/*    width:  clamp(200px, 28vw, 360px);*/
-/*    height: clamp(200px, 28vw, 360px);*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
+.home-img {
+    position: relative;
+    flex-shrink: 0;
+    width:  clamp(200px, 28vw, 360px);
+    height: clamp(200px, 28vw, 360px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
