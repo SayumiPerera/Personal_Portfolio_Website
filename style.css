@@ -553,6 +553,29 @@ body {
 }
 
 
+@keyframes letterGlow {
+    0% {
+        color: #3a1808; background: #110400; border-color: #1e0a02;
+        box-shadow: none; text-shadow: none; transform: scale(1);
+    }
+    7% {
+        color: #ffbb66;
+        background: rgba(160,50,0,0.2);
+        border-color: #ff6622;
+        box-shadow: 0 0 12px rgba(255,100,0,0.55), 0 0 28px rgba(180,50,0,0.3), inset 0 0 8px rgba(200,60,0,0.18);
+        text-shadow: 0 0 6px rgba(255,160,60,1), 0 0 14px rgba(255,100,0,0.9), 0 0 30px rgba(200,60,0,0.6);
+        transform: scale(1.25);
+    }
+    14% {
+        color: #3a1808; background: #110400; border-color: #1e0a02;
+        box-shadow: none; text-shadow: none; transform: scale(1);
+    }
+    100% {
+        color: #3a1808; background: #110400; border-color: #1e0a02;
+        box-shadow: none; text-shadow: none; transform: scale(1);
+    }
+}
+
 
 
 
