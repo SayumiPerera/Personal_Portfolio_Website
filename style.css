@@ -576,6 +576,24 @@ body {
     }
 }
 
+.glow-s {
+    animation: letterGlow 6s ease-in-out infinite 0s;
+}
+.glow-a {
+    animation: letterGlow 6s ease-in-out infinite 1s;
+}
+.glow-y {
+    animation: letterGlow 6s ease-in-out infinite 2s;
+}
+.glow-u {
+    animation: letterGlow 6s ease-in-out infinite 3s;
+}
+.glow-m {
+    animation: letterGlow 6s ease-in-out infinite 4s;
+}
+.glow-i {
+    animation: letterGlow 6s ease-in-out infinite 5s;
+}
 
 
 
