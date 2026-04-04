@@ -457,6 +457,19 @@ body {
     z-index: 0;
 }
 
+/* Two-column layout inside home */
+.home-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 100px;     /* clear fixed navbar */
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
 
 
 
