@@ -1061,6 +1061,7 @@ footer span a:hover {
     .ghost-wrap {
         left: calc(50% + clamp(120px, 30vw, 200px)); bottom: clamp(160px, 38vh, 340px);
     }
+
 }
 
 @media (max-width: 768px) {
@@ -1080,9 +1081,9 @@ footer span a:hover {
         display: block;
     }
 
-    /*.home .max-width {*/
-    /*    gap: 24px;*/
-    /*}*/
+    .home .max-width {
+        gap: 24px;
+    }
 
     .door-wrap  {
         width: clamp(190px, 64vw, 300px); height: clamp(400px, 86vh, 680px);
@@ -1107,23 +1108,24 @@ footer span a:hover {
     .contact .right form .fields {
         flex-direction: column; gap: 0;
     }
-
-
-
-
-
+    .letter {
+        width: 28px; height: 28px; font-size: 9px;
+    }
+    .d-row  {
+        gap: 3px;
+    }
+    .diamond-wrap {
+        gap: 3px;
+    }
 
 }
 
 
 @media (max-width: 500px) {
 
-
-    /*.home-left .text-2  {*/
-    /*    font-size: 1.6rem;*/
-    /*}*/
-
-
+    .home-left .text-2  {
+        font-size: 1.6rem;
+    }
 
     .door-wrap {
     width: min(78vw, 260px); height: min(84vh, 580px);
@@ -1136,20 +1138,22 @@ footer span a:hover {
         height: 250px; width: 250px;
     }
 
-
-
-
-
-
+    .letter {
+        width: 24px; height: 24px; font-size: 8px;
+    }
+    .d-row  {
+        gap: 2px;
+    }
+    .diamond-wrap {
+        gap: 2px;
+    }
 
 }
 
-
-
-
-
 @media (max-width: 1105px) {
-    .about .about-content .left img { height: 340px; width: 340px; }
+    .about .about-content .left img {
+        height: 340px; width: 340px;
+    }
 }
 
 
