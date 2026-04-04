@@ -1024,12 +1024,20 @@ footer span a:hover {
     }
 }
 
+@media (max-width: 900px) {
 
-
-
-
-
-
+    .home-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-top: 90px;
+    }
+    .home-left  {
+        align-items: center;
+    }
+    .diamond-wrap {
+        align-items: center;
+    }
 
 
     .about .about-content .left,
