@@ -498,6 +498,29 @@ body {
     cursor: default;
 }
 
+.home-left .text-2:hover {
+    color: #ff9944;
+    transform: scale(1.02);
+    text-shadow: 0 0 30px rgba(255,110,0,0.7), 0 0 60px rgba(200,60,0,0.4);
+}
+
+.home-left .text-3 {
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    color: #7a4020;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.home-left .text-3 span {
+    display: block;
+    color: #e07030;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    margin-top: 4px;
+    text-shadow: 0 0 20px rgba(220,80,0,0.45);
+    letter-spacing: 1px;
+}
 
 
 
