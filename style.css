@@ -479,6 +479,13 @@ body {
     flex: 1;
 }
 
+.home-left .text-1 {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    color: #b06030;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
 
 
 
