@@ -879,7 +879,21 @@ section {
     background-color:var(--fa);
     left: calc(50% - 1px);
 }
-
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-right: calc(50% + 30px);
+}
 
 
 
