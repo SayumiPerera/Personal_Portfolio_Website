@@ -851,6 +851,7 @@ section {
 
 
 
+
 /*Education*/
 .heading{
     font-size: 5rem;
@@ -935,6 +936,16 @@ section {
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--fa);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--fa-style);
+    width:50px;
 }
 
 
