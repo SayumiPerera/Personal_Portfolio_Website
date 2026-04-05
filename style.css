@@ -853,7 +853,7 @@ section {
 
 /*Education*/
 .heading{
-    font-size: 8rem;
+    font-size: 5rem;
     text-align: center;
     margin: 5rem 0;
 }
@@ -864,6 +864,15 @@ section {
 .education h2{
     margin-bottom: 5rem;
 }
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
 
 
 
