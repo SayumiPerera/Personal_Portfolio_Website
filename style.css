@@ -894,6 +894,17 @@ section {
 .timeline-item:nth-child(even){
     padding-right: calc(50% + 30px);
 }
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--fa);
+    box-shadow: 0 0 25px var(--fa),
+    0 0 50px var(--fa);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top:10px;
+}
 
 
 
