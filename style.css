@@ -871,7 +871,14 @@ section {
     flex-wrap: wrap;
     position: relative;
 }
-
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color:var(--fa);
+    left: calc(50% - 1px);
+}
 
 
 
