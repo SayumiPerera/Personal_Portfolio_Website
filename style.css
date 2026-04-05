@@ -852,6 +852,20 @@ section {
 
 
 /*Education*/
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education {
+    padding: 100px 15px;
+    background:var(--fa-style);
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+
+
 
 
 
