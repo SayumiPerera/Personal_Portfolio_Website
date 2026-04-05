@@ -911,7 +911,15 @@ section {
     color: white;
     margin: 6px 0 15px;
 }
-
+.timeline-content{
+    background-color: var(--fa-style);
+    border: 3px solid var(--fa);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--fa);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
 
 
 
