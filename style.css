@@ -1160,7 +1160,14 @@ section {
     color: #ffcc88;
     text-shadow: 0 0 12px rgba(255, 120, 0, 0.3);
 }
-
+/* card description */
+.service-card p {
+    font-size: 14px;
+    color: #6a3820;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+.service-card:hover p { color: #8a5035; }
 
 
 
