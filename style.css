@@ -1062,6 +1062,15 @@ section {
     line-height: 1.7;
 }
 
+/* 2 column grid */
+.service-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 60px;
+}
+
 
 
 
