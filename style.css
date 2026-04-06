@@ -1053,6 +1053,14 @@ section {
     text-shadow: 0 0 12px rgba(220, 80, 0, 0.35);
 }
 
+.service-desc {
+    text-align: center;
+    font-size: 15px;
+    color: #6a3820;
+    max-width: 520px;
+    margin: 0 auto 60px;
+    line-height: 1.7;
+}
 
 
 
