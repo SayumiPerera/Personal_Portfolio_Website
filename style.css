@@ -1167,7 +1167,17 @@ section {
     line-height: 1.6;
     transition: color 0.3s ease;
 }
-.service-card:hover p { color: #8a5035; }
+.service-card:hover p {
+    color: #8a5035;
+}
+/*responsive*/
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 440px;
+    }
+}
 
 
 
