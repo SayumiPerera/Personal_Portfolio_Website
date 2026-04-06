@@ -1037,14 +1037,21 @@ section {
 
 
 
-
-
-
-
-
-
 /*service*/
+.service .title::after {
+    content: "What I offer";
+}
 
+.service-subtitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #e07030;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-shadow: 0 0 12px rgba(220, 80, 0, 0.35);
+}
 
 
 
