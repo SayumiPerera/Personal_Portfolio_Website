@@ -517,12 +517,13 @@
 
         </div>
 
+        <!-- projects-strip -->
+        <!-- Scroll hint arrows -->
+        <button class="strip-arrow strip-arrow--left" id="arrowLeft">&#8592;</button>
+        <button class="strip-arrow strip-arrow--right" id="arrowRight">&#8594;</button>
+    </div>
 
-
-
-
-
-        </div>
+    <p class="drag-hint">&#8592;&nbsp; drag or click arrows to scroll &nbsp;&#8594;</p>
 
 </section>
 
@@ -601,17 +602,25 @@
                 <form action="#">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Name" required>
+                            <label>
+                                <input type="text" placeholder="Name" required>
+                            </label>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <label>
+                                <input type="email" placeholder="Email" required>
+                            </label>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
+                        <label>
+                            <input type="text" placeholder="Subject" required>
+                        </label>
                     </div>
                     <div class="textarea">
-                        <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                        <label>
+                            <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
+                        </label>
                     </div>
                     <div class="button">
                         <button type="submit">Send message</button>
