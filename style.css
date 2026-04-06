@@ -1033,11 +1033,27 @@ section {
 
 
 
+/*skills*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*service*/
+
 .service .title::after {
     content: "What I offer";
 }
@@ -1192,6 +1208,74 @@ section {
         font-size: 16px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*projects*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*assignments*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*gallery*/
+
+
+
+
+
+
+
+
 
 
 
