@@ -1170,28 +1170,7 @@ section {
 .service-card:hover p {
     color: #8a5035;
 }
-/*responsive*/
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        max-width: 440px;
-    }
-}
-@media (max-width: 500px) {
-    .service-card {
-        padding: 30px 18px 24px;
-    }
-    .service-icon  {
-        width: 64px; height: 64px;
-    }
-    .service-icon i {
-        font-size: 26px;
-    }
-    .service-card h3 {
-        font-size: 16px;
-    }
-}
+
 
 
 
