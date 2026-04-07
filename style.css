@@ -1075,6 +1075,14 @@ section {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+.skill-front img {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+    /* make GitHub (black svg) visible on dark bg */
+    filter: drop-shadow(0 0 4px rgba(255, 120, 0, 0.15));
+    transition: filter 0.3s ease;
+}
 
 
 
