@@ -1268,7 +1268,24 @@ section {
     cursor: grabbing;
     scroll-behavior: auto;
 }
+/* individual card */
+.project-card {
+    flex: 0 0 clamp(280px, 36vw, 420px);
+    background: #0f0300;
+    border: 1px solid rgba(200, 80, 0, 0.18);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
 
+.project-card:hover {
+    border-color: rgba(255, 100, 0, 0.55);
+    transform: translateY(-8px);
+    box-shadow:
+            0 20px 50px rgba(180, 50, 0, 0.22),
+            0 0 0 1px rgba(255, 100, 0, 0.12);
+}
 
 
 
