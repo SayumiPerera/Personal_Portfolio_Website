@@ -1378,7 +1378,23 @@ section {
 .project-card:hover .project-shine {
     transform: translateX(100%);
 }
-
+/* card info */
+.project-info {
+    padding: 24px 26px 28px;
+}
+.project-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c06030;
+    background: rgba(180, 60, 0, 0.12);
+    border: 1px solid rgba(200, 70, 0, 0.3);
+    border-radius: 20px;
+    padding: 3px 12px;
+    margin-bottom: 14px;
+}
 
 
 
