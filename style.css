@@ -1346,6 +1346,22 @@ section {
     box-shadow: 0 12px 0 rgba(220,80,0,0.4), 0 24px 0 rgba(220,80,0,0.25), 0 36px 0 rgba(220,80,0,0.15);
     border-radius: 2px;
 }
+.project-img--mvc {
+    background: linear-gradient(135deg, #0b0200 0%, #1e0900 50%, #2f1200 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #e07030;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 20px rgba(220,80,0,0.6);
+}
+.project-img--mvc::after {
+    content: "M · V · C";
+}
+
 
 
 
