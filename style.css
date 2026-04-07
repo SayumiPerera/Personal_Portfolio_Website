@@ -1413,7 +1413,22 @@ section {
     display: flex;
     gap: 10px;
 }
-
+.proj-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    background: rgba(180, 60, 0, 0.25);
+    color: #f0c090;
+    border: 1px solid rgba(220, 90, 0, 0.45);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
 
 
