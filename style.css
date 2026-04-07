@@ -1034,7 +1034,18 @@ section {
 
 
 /*skills*/
+.skills .title::after {
+    content: "What I know";
+}
 
+/* grid — 5 columns on desktop, shrinks responsively */
+.skills-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
 
 
 
