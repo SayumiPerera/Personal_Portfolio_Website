@@ -1471,6 +1471,16 @@ section {
 .strip-arrow--right {
     right: 16px;
 }
+/* drag hint*/
+.drag-hint {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #2a1006;
+    text-transform: uppercase;
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
 
 
 
