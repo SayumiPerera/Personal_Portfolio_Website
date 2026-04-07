@@ -1361,7 +1361,23 @@ section {
 .project-img--mvc::after {
     content: "M · V · C";
 }
-
+/* shine sweep on hover */
+.project-shine {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+            110deg,
+            transparent 30%,
+            rgba(255, 140, 0, 0.1) 50%,
+            transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+    pointer-events: none;
+}
+.project-card:hover .project-shine {
+    transform: translateX(100%);
+}
 
 
 
