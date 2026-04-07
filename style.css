@@ -1303,7 +1303,21 @@ section {
 .project-card:hover .project-img {
     transform: scale(1.07);
 }
-
+/* placeholder visuals for each project (replace with real screenshots) */
+.project-img--stock {
+    background: linear-gradient(135deg, #0d0200 0%, #1a0800 40%, #2a1200 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-img--stock::after {
+    content: "$ ./stock_manager";
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    color: #e07030;
+    text-shadow: 0 0 12px rgba(220,80,0,0.7);
+    letter-spacing: 1px;
+}
 
 
 
