@@ -1037,7 +1037,6 @@ section {
 .skills .title::after {
     content: "What I know";
 }
-
 /* grid — 5 columns on desktop, shrinks responsively */
 .skills-grid {
     max-width: 900px;
@@ -1046,7 +1045,13 @@ section {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
-
+/* outer card — sets the 3D perspective */
+.skill-card {
+    perspective: 600px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
 
 
 
