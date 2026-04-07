@@ -1075,6 +1075,15 @@ section {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+.skill-front {
+    background: #110400;
+    border: 1px solid #2a1005;
+    padding: 18px;
+    transition: border-color 0.3s ease;
+}
+.skill-card:hover .skill-front {
+    border-color: rgba(220, 90, 0, 0.4);
+}
 .skill-front img {
     width: 55%;
     height: 55%;
