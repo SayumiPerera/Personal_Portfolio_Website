@@ -1318,7 +1318,18 @@ section {
     text-shadow: 0 0 12px rgba(220,80,0,0.7);
     letter-spacing: 1px;
 }
-
+.project-img--connect4 {
+    background: linear-gradient(135deg, #0a0300 0%, #1c0a00 50%, #2d1400 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.project-img--connect4::after {
+    content: "🔴🟡🔴🟡";
+    filter: drop-shadow(0 0 10px rgba(255,100,0,0.5));
+}
 
 
 
