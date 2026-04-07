@@ -1403,6 +1403,16 @@ section {
     line-height: 1.35;
     letter-spacing: 0.3px;
 }
+.project-info p {
+    font-size: 13px;
+    color: #6a3820;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.project-links {
+    display: flex;
+    gap: 10px;
+}
 
 
 
