@@ -1092,6 +1092,18 @@ section {
     filter: drop-shadow(0 0 4px rgba(255, 120, 0, 0.15));
     transition: filter 0.3s ease;
 }
+/* back face */
+.skill-back {
+    background: rgba(160, 50, 0, 0.22);
+    border: 2px solid #ff6622;
+    transform: rotateY(180deg);
+    box-shadow:
+            0 0 18px rgba(255, 100, 0, 0.4),
+            0 0 45px rgba(200,  60, 0, 0.2),
+            inset 0 0 16px rgba(200, 60, 0, 0.12);
+    flex-direction: column;
+    gap: 0;
+}
 
 
 
