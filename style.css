@@ -1224,7 +1224,18 @@ section {
 
 /*projects*/
 
+.projects {
+    padding: 100px 0 60px;
+    background: #0a0300;
+    overflow: hidden;
+}
 
+.projects-heading {
+    text-align: center;
+}
+.projects .title::after {
+    content: "Things I built";
+}
 
 
 
