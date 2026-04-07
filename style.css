@@ -1459,7 +1459,18 @@ section {
     z-index: 10;
     line-height: 1;
 }
-
+.strip-arrow:hover {
+    background: rgba(180, 60, 0, 0.4);
+    border-color: #ff6622;
+    color: #ffcc88;
+    box-shadow: 0 0 16px rgba(255,100,0,0.35);
+}
+.strip-arrow--left  {
+    left: 16px;
+}
+.strip-arrow--right {
+    right: 16px;
+}
 
 
 
