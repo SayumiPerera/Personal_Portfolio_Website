@@ -1857,6 +1857,16 @@ section {
     box-shadow: 0 0 60px rgba(180,50,0,0.2);
     animation: lb-zoom 0.3s ease;
 }
+@keyframes lb-zoom {
+    from{
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 
 
