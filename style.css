@@ -1678,6 +1678,21 @@ section {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.back-link {
+    font-size: 12px;
+    color: #5a3020;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+.back-link:hover {
+    color: #ff8844;
+}
 
 
 
