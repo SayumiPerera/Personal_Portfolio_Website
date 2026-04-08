@@ -94,6 +94,21 @@ window.addEventListener('scroll', () => {
 
 
 
+// gallery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
