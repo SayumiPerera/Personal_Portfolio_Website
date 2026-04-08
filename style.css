@@ -1913,23 +1913,6 @@ section {
     top: 50%;
     transform: translateY(-50%);
 }
-/* responsive */
-@media (max-width: 600px){
-    .gc-stage{
-        height: 55vh;
-    }
-    .gc-btn{
-        padding: 8px 14px;
-        font-size: 10px;
-        letter-spacing: 1px;
-    }
-    .gc-lb-prev{
-        left: 8px;
-    }
-    .gc-lb-next{
-        right: 8px;
-    }
-}
 
 
 
