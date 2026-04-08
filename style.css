@@ -1621,8 +1621,20 @@ section {
 
 
 
-/*assignments*/
 
+/*assignments*/
+.assignments .title::after {
+    content: "Coursework";
+}
+
+.assign-preview-grid {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 20px;
+}
 
 
 
