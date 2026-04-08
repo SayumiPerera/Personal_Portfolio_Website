@@ -1834,6 +1834,15 @@ section {
     display: flex;
     animation: lb-in 0.3s ease;
 }
+@keyframes lb-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 
 
 
