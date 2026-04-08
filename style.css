@@ -1772,7 +1772,14 @@ section {
     color: rgba(180,60,0,0.35);
     letter-spacing: 2px;
 }
-
+/* mode buttons */
+.gc-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px 20px 50px;
+}
 
 
 
