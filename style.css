@@ -1804,6 +1804,20 @@ section {
     transform: translateX(-100%);
     transition: transform 0.5s ease;
 }
+.gc-btn:hover::before {
+    transform: translateX(100%);
+}
+.gc-btn:hover {
+    border-color: rgba(255,100,0,0.45);
+    color: #c07040;
+}
+
+.gc-btn.active {
+    background: rgba(180,60,0,0.3);
+    border-color: #ff6622;
+    color: #f0c090;
+    box-shadow: 0 0 16px rgba(255,100,0,0.25);
+}
 
 
 
