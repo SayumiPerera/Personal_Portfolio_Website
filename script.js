@@ -79,57 +79,6 @@ window.addEventListener('scroll', () => {
 
 // projects section
 
-// Projects strip — drag to scroll + arrow buttons
-(function () {
-    const strip     = document.getElementById('projectsStrip');
-    const arrowL    = document.getElementById('arrowLeft');
-    const arrowR    = document.getElementById('arrowRight');
-    if (!strip) return;
-
-    // Arrow scroll
-    const SCROLL_AMOUNT = 460;
-    arrowL.addEventListener('click', () => strip.scrollBy({ left: -SCROLL_AMOUNT, behavior: 'smooth' }));
-    arrowR.addEventListener('click', () => strip.scrollBy({ left:  SCROLL_AMOUNT, behavior: 'smooth' }));
-
-    // Drag to scroll
-    let isDragging = false, startX = 0, scrollLeft = 0;
-
-    strip.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        strip.classList.add('dragging');
-        startX     = e.pageX - strip.offsetLeft;
-        scrollLeft = strip.scrollLeft;
-    });
-    strip.addEventListener('mouseleave', () => { isDragging = false; strip.classList.remove('dragging'); });
-    strip.addEventListener('mouseup',    () => { isDragging = false; strip.classList.remove('dragging'); });
-    strip.addEventListener('mousemove',  (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        const x    = e.pageX - strip.offsetLeft;
-        const walk = (x - startX) * 1.4;
-        strip.scrollLeft = scrollLeft - walk;
-    });
-
-    // Touch support
-    let touchStartX = 0, touchScrollLeft = 0;
-    strip.addEventListener('touchstart', (e) => {
-        touchStartX    = e.touches[0].pageX;
-        touchScrollLeft = strip.scrollLeft;
-    }, { passive: true });
-    strip.addEventListener('touchmove', (e) => {
-        const x    = e.touches[0].pageX;
-        const walk = (touchStartX - x) * 1.2;
-        strip.scrollLeft = touchScrollLeft + walk;
-    }, { passive: true });
-})();
-
-
-
-
-
-
-
-
 
 
 
