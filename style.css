@@ -1891,6 +1891,14 @@ section {
     transition: all 0.3s ease;
     font-family: inherit; line-height: 1;
 }
+.gc-lb-close:hover,
+.gc-lb-prev:hover,
+.gc-lb-next:hover {
+    background: rgba(180,60,0,0.4);
+    color: #ffcc88;
+    border-color: #ff6622;
+    box-shadow: 0 0 16px rgba(255,100,0,0.35);
+}
 
 
 
