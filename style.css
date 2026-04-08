@@ -1648,7 +1648,16 @@ section {
 
 /*gallery*/
 
-
+/* page wrapper */
+.gallery-page {
+    min-height: 100vh;
+    background: #0a0300;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
 
 
 
