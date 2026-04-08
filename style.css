@@ -1754,6 +1754,10 @@ section {
     transition: opacity 0.35s ease, transform 0.35s ease;
     pointer-events: none;
 }
+.gc-card:hover .gc-card-label {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
