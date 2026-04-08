@@ -1666,6 +1666,12 @@ section {
     align-items: center;
     gap: 10px;
 }
+.gallery-page-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: #f0c090;
+    text-shadow: 0 0 40px rgba(200,80,0,0.25);
+}
 
 
 
