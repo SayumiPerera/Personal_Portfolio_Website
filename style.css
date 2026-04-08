@@ -1899,6 +1899,20 @@ section {
     border-color: #ff6622;
     box-shadow: 0 0 16px rgba(255,100,0,0.35);
 }
+.gc-lb-close {
+    top: 24px;
+    right: 24px;
+}
+.gc-lb-prev  {
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gc-lb-next  {
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 
 
