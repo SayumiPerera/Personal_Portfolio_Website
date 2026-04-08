@@ -1672,6 +1672,12 @@ section {
     color: #f0c090;
     text-shadow: 0 0 40px rgba(200,80,0,0.25);
 }
+.gallery-page-header p {
+    font-size: 14px;
+    color: #4a2510;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
 
 
