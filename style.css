@@ -1867,6 +1867,13 @@ section {
         opacity: 1;
     }
 }
+#gcLbCaption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #6a3820;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
 
 
