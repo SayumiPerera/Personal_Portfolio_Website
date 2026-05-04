@@ -3,7 +3,7 @@
 /*   Hamburger menu */
 
 const menuBtn = document.getElementById('menu-btn');
-const navMenu = document.querySelector('.menu');          // ← fix
+const navMenu = document.querySelector('.menu');
 
 menuBtn.addEventListener('click', e => {
     e.stopPropagation();
@@ -43,7 +43,7 @@ doorWrap.addEventListener('mouseenter', () => {
 doorWrap.addEventListener('mouseleave', () => {
     if (!hasEntered) clearTimeout(hoverTimer);
 });
-doorWrap.addEventListener('click', triggerEnter);   // mobile tap
+doorWrap.addEventListener('click', triggerEnter);
 
 
 
@@ -54,8 +54,12 @@ const strip      = document.getElementById('projectsStrip');
 const arrowLeft  = document.getElementById('arrowLeft');
 const arrowRight = document.getElementById('arrowRight');
 
-arrowLeft ?.addEventListener('click', () => strip.scrollBy({ left: -460, behavior: 'smooth' }));
-arrowRight?.addEventListener('click', () => strip.scrollBy({ left:  460, behavior: 'smooth' }));
+arrowLeft ?.addEventListener('click', () => strip.scrollBy({
+    left: -460, behavior: 'smooth'})
+);
+arrowRight?.addEventListener('click', () => strip.scrollBy({
+    left:  460, behavior: 'smooth' })
+);
 
 
 
