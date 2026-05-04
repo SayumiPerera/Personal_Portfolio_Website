@@ -394,3 +394,122 @@ body,
         gap: 0;
     }
 }
+
+
+/* Responsive: 425 px  */
+
+@media (max-width: 425px) {
+    .max-width {
+        padding: 0 18px;
+    }
+    section { padding: 60px 0;
+    }
+    .title { font-size: 26px;
+        margin-bottom: 46px;
+    }
+    .navbar .logo a {
+        font-size: 22px;
+    }
+    .home-inner {
+        padding-top: 78px;
+        gap: 20px;
+    }
+    .home-left .text-1 {
+        font-size: 0.9rem;
+    }
+    .home-left .text-2 {
+        font-size: 1.65rem;
+    }
+    .home-left .text-3 {
+        font-size: 0.88rem;
+    }
+    .home-left .text-3 span {
+        font-size: 0.88rem;
+    }
+    .letter {
+        width: 26px;
+        height: 26px;
+        font-size: 8.5px;
+    }
+    .d-row  {
+        gap: 3px;
+    }
+    .diamond-wrap {
+        gap: 3px;
+    }
+    .home-img {
+        width: clamp(160px, 56vw, 240px);
+        height: clamp(160px, 56vw, 240px);
+    }
+    .center-photo {
+        width: clamp(140px, 50vw, 210px);
+        height: clamp(140px, 50vw, 210px);
+    }
+
+    .about .about-content .left img {
+        width: 220px;
+        height: 220px;
+    }
+    .about .about-content .right .text {
+        font-size: 20px;
+    }
+    .about .about-content .right p {
+        font-size: 14px;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    .service-card {
+        padding: 28px 16px 22px;
+    }
+    .service-icon {
+        width: 66px;
+        height: 66px;
+    }
+    .service-icon i {
+        font-size: 26px;
+    }
+    .service-card h3 {
+        font-size: 16px;
+    }
+    .project-card {
+        flex: 0 0 88vw;
+    }
+    .project-img-wrap {
+        height: 185px;
+    }
+    .gallery-track-wrap {
+        padding: 10px 16px 20px;
+    }
+    .gallery-card {
+        flex: 0 0 84vw;
+        height: 62vw;
+    }
+    .lightbox-close {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        top: 14px;
+        right: 14px;
+    }
+    .lightbox-prev {
+        left: 8px;
+    }
+    .lightbox-next {
+        right: 8px;
+    }
+    .assign-preview-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact .right form .button {
+        width: 100%;
+    }
+    .contact .right form .button button {
+        font-size: 15px;
+    }
+    .door-wrap {
+        width: min(72vw, 280px);
+        height: min(85vh, 600px);
+    }
+}
