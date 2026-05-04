@@ -205,3 +205,22 @@ body,
     top: 50%;
     transform: translateY(-50%);
 }
+
+/*ASSIGNMENTS */
+
+.assign-preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+/* PROJECTS STRIP  */
+
+.projects-strip {
+    scroll-snap-type: x mandatory;
+}
+
+.project-card {
+    scroll-snap-align: start;
+}
