@@ -2303,6 +2303,20 @@ footer span a:hover {
 }
 
 
+
+@media (max-width: 768px) {
+    .nav-social {
+        display: none;
+    }
+
+    /* show social inside the open hamburger menu */
+    .menu.open ~ .nav-social,
+    .navbar .menu.open + .nav-social {
+        display: none; /* keep hidden — contact section is enough on mobile */
+    }
+}
+
+
 @media (max-width: 500px) {
 
     .home-left .text-2  {
