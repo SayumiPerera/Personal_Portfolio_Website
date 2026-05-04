@@ -706,7 +706,10 @@ body {
     transition: opacity 0.5s ease;
 }
 .home-img .hover-img {
-    position: absolute; opacity: 0; z-index: 3; transition: opacity 0.5s ease;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease;
 }
 .home-img:hover .hover-img {
     opacity: 1;
@@ -963,8 +966,7 @@ section {
     border: 2px solid rgba(220, 90, 0, 0.45);
     padding: 22px 28px;
     border-radius: 14px;
-    box-shadow:
-            0 0 14px rgba(200, 70, 0, 0.18),
+    box-shadow: 0 0 14px rgba(200, 70, 0, 0.18),
             inset 0 0 18px rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: all 0.3s ease;

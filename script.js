@@ -1,11 +1,4 @@
-/* ============================================================
-   DOOR OVERLAY
-   Flow:
-     1. User hovers door  → CSS opens it smoothly (2.4s)
-     2. After 1s of hover → JS adds "entering" (locks door open)
-     3. After 1.4s more   → JS adds "entered"  (overlay fades out)
-     4. Mouse leaves early → timer cancelled, door swings back
-============================================================ */
+/*  DOOR OVERLAY */
 const overlay  = document.getElementById('door-overlay');
 const doorWrap = document.getElementById('door-wrap');
 
@@ -56,6 +49,38 @@ window.addEventListener('scroll', () => {
     document.querySelector('.navbar')
         .classList.toggle('sticky', window.scrollY > 20);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,6 +174,7 @@ PHOTOS.forEach((p, i) => {
     const label = document.createElement('div');
     label.className = 'gc-card-label';
     label.textContent = p.label;
+
 
     card.appendChild(img);
     card.appendChild(label);

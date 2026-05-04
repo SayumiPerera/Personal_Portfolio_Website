@@ -1,0 +1,12 @@
+
+html {
+    overflow-x: hidden;
+}
+
+body,
+.home, .about, .education, .skills,
+.service, .projects, .assignments,
+.gallery, .contact {
+    overflow-x: hidden;
+}
+
