@@ -269,3 +269,128 @@ body,
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+
+/*  Responsive: 768 px */
+
+@media (max-width: 768px) {
+    .max-width {
+        padding: 0 24px;
+    }
+    section { padding: 72px 0;
+    }
+    .title{ font-size: 30px;
+        margin-bottom: 52px;
+    }
+    .navbar {
+        padding: 16px 0;
+    }
+    .navbar .logo a {
+        font-size: 24px;
+    }
+    .home-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-top: 84px;
+        gap: 28px;
+    }
+    .home-left {
+        align-items: center;
+        gap: 14px;
+    }
+    .diamond-wrap {
+        align-items: center;
+    }
+    .about .about-content {
+        flex-direction: column;
+    }
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+    }
+    .about .about-content .left {
+        justify-content: center;
+    }
+    .about .about-content .left img {
+        width: 280px;
+        height: 280px;
+    }
+    .timeline-items {
+        padding: 10px 8px 40px;
+    }
+    .timeline-items::before {
+        left: 8px;
+        transform: none;
+    }
+    .timeline-dot {
+        left: 0;
+        width: 16px;
+        height: 16px;
+        top: 16px;
+        transform: none;
+    }
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 34px;
+    }
+    .timeline-item:nth-child(odd)  .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        position: static;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .timeline-item:nth-child(odd)  .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        margin-top: 0;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+    }
+    .projects-strip {
+        padding: 16px 20px 36px;
+        gap: 16px;
+    }
+    .project-card {
+        flex: 0 0 82vw;
+    }
+    .strip-arrow {
+        display: none;
+    }
+    .gallery-track-wrap {
+        padding: 10px 24px 20px;
+    }
+    .gallery-card {
+        flex: 0 0 72vw;
+        height: 54vw;
+    }
+    .lightbox-prev {
+        left: 10px;
+    }
+    .lightbox-next {
+        right: 10px;
+    }
+    .assign-preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact .contact-content {
+        flex-direction: column;
+    }
+    .contact .contact-content .column {
+        width: 100%;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+        gap: 0;
+    }
+}
