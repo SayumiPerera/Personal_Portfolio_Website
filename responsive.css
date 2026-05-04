@@ -513,3 +513,50 @@ body,
         height: min(85vh, 600px);
     }
 }
+
+/* BREAKPOINT: 375 px */
+
+@media (max-width: 375px) {
+    .max-width {
+        padding: 0 14px;
+    }
+    section {
+        padding: 54px 0;
+    }
+    .title {
+        font-size: 23px;
+    }
+    .home-inner {
+        padding-top: 74px;
+    }
+    .home-left .text-2 {
+        font-size: 1.4rem;
+        letter-spacing: -0.5px;
+    }
+    .letter {
+        width: 23px;
+        height: 23px;
+        font-size: 7.5px;
+    }
+    .d-row {
+        gap: 2px;
+    }
+    .diamond-wrap {
+        gap: 2px;
+    }
+    .service-card h3 {
+        font-size: 15px;
+    }
+    .gallery-card {
+        flex: 0 0 88vw;
+        height: 65vw;
+    }
+    .navbar .logo a {
+        font-size: 20px;
+    }
+    .contact .contact-content .row {
+        height: auto;
+        padding: 8px 0;
+        align-items: flex-start;
+    }
+}
