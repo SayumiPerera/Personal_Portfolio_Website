@@ -514,7 +514,7 @@ body,
     }
 }
 
-/* BREAKPOINT: 375 px */
+/* Responsive: 375 px */
 
 @media (max-width: 375px) {
     .max-width {
@@ -558,5 +558,147 @@ body,
         height: auto;
         padding: 8px 0;
         align-items: flex-start;
+    }
+}
+
+/* Responsive: 320 px  */
+
+@media (max-width: 320px) {
+    .max-width {
+        padding: 0 10px;
+    }
+    section {
+        padding: 48px 0;
+    }
+    .title {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .navbar {
+        padding: 12px 0;
+    }
+    .navbar .logo a {
+        font-size: 18px;
+    }
+    .home-inner {
+        padding-top: 68px;
+        gap: 16px;
+    }
+    .home-left .text-2 {
+        font-size: 1.2rem;
+    }
+    .home-left .text-1 {
+        font-size: 0.78rem;
+    }
+    .home-left .text-3,
+    .home-left .text-3 span {
+        font-size: 0.78rem;
+    }
+    .letter {
+        width: 19px;
+        height: 19px;
+        font-size: 6.5px;
+        border-radius: 3px;
+    }
+    .d-row {
+        gap: 2px;
+    }
+    .diamond-wrap {
+        gap: 2px;
+    }
+    .home-img {
+        width: clamp(130px, 72vw, 200px);
+        height: clamp(130px, 72vw, 200px);
+    }
+    .center-photo {
+        width: clamp(110px, 62vw, 180px);
+        height: clamp(110px, 62vw, 180px);
+    }
+    .about .about-content .left img {
+        width: 190px;
+        height: 190px;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .skill-back span {
+        font-size: 9px;
+    }
+    .service-card {
+        padding: 22px 12px 18px;
+    }
+    .service-icon {
+        width: 56px;
+        height: 56px;
+    }
+    .service-icon i {
+        font-size: 22px;
+    }
+    .service-card h3 {
+        font-size: 14px;
+    }
+    .service-card p {
+        font-size: 12px;
+    }
+    .project-card {
+        flex: 0 0 92vw;
+    }
+    .project-img-wrap {
+        height: 160px;
+    }
+    .project-info {
+        padding: 18px 18px 22px;
+    }
+    .project-info h3 {
+        font-size: 15px;
+    }
+    .gallery-track-wrap {
+        padding: 8px 10px 16px;
+    }
+    .gallery-card {
+        flex: 0 0 92vw;
+        height: 68vw;
+    }
+    .lightbox-close {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+    .lightbox-prev {
+        left: 4px;
+    }
+    .lightbox-next {
+        right: 4px;
+    }
+    .contact .contact-content .text {
+        font-size: 17px;
+    }
+    .contact .contact-content .row i {
+        font-size: 20px;
+    }
+    .contact .contact-content .info .sub-title {
+        font-size: 13px;
+    }
+    .contact .right form .field input,
+    .contact .right form .textarea textarea {
+        font-size: 13px;
+    }
+    .contact .right form .button button {
+        font-size: 14px;
+    }
+    .door-wrap {
+        width: min(80vw, 240px);
+        height: min(84vh, 540px);
+    }
+    .door-label h2 {
+        font-size: 1.4rem;
+    }
+    .door-label h4 {
+        font-size: 0.7rem;
+    }
+    footer {
+        font-size: 12px;
+        padding: 18px 12px;
     }
 }
