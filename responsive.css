@@ -248,3 +248,24 @@ body,
     .max-width { padding: 0 80px;
     }
 }
+
+/*  Responsive: 1024 px */
+
+@media (max-width: 1024px) {
+    .max-width {
+        padding: 0 48px;
+    }
+    .home-left .text-2 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+    .about .about-content .left img {
+        width: 320px;
+        height: 320px;
+    }
+    .service-grid {
+        gap: 28px 40px;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
