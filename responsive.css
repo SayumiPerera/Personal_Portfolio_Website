@@ -215,7 +215,7 @@ body,
 
 
 
-/* PROJECTS STRIP  */
+/* PROJECTS */
 
 .projects-strip {
     scroll-snap-type: x mandatory;
@@ -223,4 +223,21 @@ body,
 
 .project-card {
     scroll-snap-align: start;
+}
+
+/*  DOOR — tap hint */
+
+@media (hover: none) {
+    .enter-hint {
+        visibility: hidden;
+        position: relative;
+    }
+    .enter-hint::after {
+        content: " tap to enter";
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
 }
