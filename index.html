@@ -640,14 +640,52 @@
 
 
 
-<!--assignment section-->
-
+<!-- Assignments Section -->
 <section class="assignments" id="assignments">
-    <h2 class="title">Assignments</h2>
+    <div class="max-width">
+        <h2 class="title">Assignments</h2>
+        <p class="service-subtitle">Coursework &amp; Practice</p>
 
-    <div class="assign-preview-grid">
+        <!-- Preview Grid - First 3 Assignments -->
+        <div class="assign-preview-grid" id="previewGrid">
 
+            <!-- Assignment 1 -->
+            <div class="assignment-card">
+                <span class="tag">CSS</span>
+                <h3>ITS1119 CSS Exercise 3</h3>
+                <p>Advanced CSS layouts and styling techniques</p>
+                <button class="proj-btn view-details-btn" data-id="1">View Details →</button>
+            </div>
 
+            <!-- Assignment 2 -->
+            <div class="assignment-card">
+                <span class="tag">CSS</span>
+                <h3>ITS1119 CSS Exercise 4</h3>
+                <p>Responsive design and modern CSS features</p>
+                <button class="proj-btn view-details-btn" data-id="2">View Details →</button>
+            </div>
+
+            <!-- Assignment 3 -->
+            <div class="assignment-card">
+                <span class="tag">JavaScript</span>
+                <h3>ITS1119 JS Exercise 1</h3>
+                <p>DOM manipulation and basic interactions</p>
+                <button class="proj-btn view-details-btn" data-id="3">View Details →</button>
+            </div>
+
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center" style="margin: 50px 0 30px;">
+            <button class="proj-btn" id="viewMoreBtn" style="font-size: 16px; padding: 14px 36px;">
+                <i class="fas fa-folder-open"></i> View All 4 Assignments
+            </button>
+        </div>
+
+        <!-- Hidden Full List (shown after clicking View More) -->
+        <div class="assign-full-grid" id="fullGrid" style="display: none; margin-top: 40px;">
+            <!-- Assignment 4 will appear here + others are duplicated for simplicity -->
+        </div>
     </div>
 </section>
 
