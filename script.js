@@ -64,6 +64,95 @@ arrowRight?.addEventListener('click', () => strip.scrollBy({
 
 
 
+
+
+// Assignments
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // View More Button
+    document.getElementById('viewMoreBtn').addEventListener('click', () => {
+        document.getElementById('fullGrid').style.display = 'grid';
+        document.getElementById('viewMoreBtn').style.display = 'none';
+    });
+
+    // Open Modal
+    document.querySelectorAll('.view-details-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            showAssignmentModal(id);
+        });
+    });
+});
+
+function showAssignmentModal(id) {
+    let title, desc, github;
+
+    if (id === "1") {
+        title = "ITS1119 CSS Exercise 3";
+        github = "https://github.com/SayumiPerera/ITS1119_CSS_EX_3";
+        desc = "Advanced CSS layouts and styling techniques";
+    } else if (id === "2") {
+        title = "ITS1119 CSS Exercise 4";
+        github = "https://github.com/SayumiPerera/ITS1119_CSS_EX_4";
+        desc = "Responsive design and modern CSS features";
+    } else if (id === "3") {
+        title = "ITS1119 JavaScript Exercise 1";
+        github = "https://github.com/SayumiPerera/ITS1119_JS_EX_1";
+        desc = "DOM manipulation and basic interactions";
+    } else {
+        title = "ITS1119 JavaScript Exercise 2";
+        github = "https://github.com/SayumiPerera/ITS1119_JS_EX_2";
+        desc = "Advanced JavaScript concepts and logic";
+    }
+
+    const modalHTML = `
+        <div class="assignment-modal active" id="modal-${id}">
+            <div class="modal-content">
+                <button onclick="closeModal(${id})" style="float:right; background:none; border:none; font-size:30px; color:#e06020; cursor:pointer;">×</button>
+                
+                <h2>${title}</h2>
+                <p>${desc}</p>
+                
+                <a href="${github}" target="_blank" class="proj-btn" style="margin: 20px 0; display:inline-block;">
+                    <i class="fab fa-github"></i> View Full Repository
+                </a>
+
+                <h3 style="margin-top: 30px;">Cases / Exercises</h3>
+                
+                <div class="case-card">
+                    <h4>Case 01</h4>
+                    <div style="margin-top:12px;">
+                        <a href="${github}" target="_blank" class="proj-btn">GitHub</a>
+                        <a href="#" onclick="alert('Add your live demo link here')" class="proj-btn">See Output</a>
+                    </div>
+                </div>
+                
+                <div class="case-card">
+                    <h4>Case 02</h4>
+                    <div style="margin-top:12px;">
+                        <a href="${github}" target="_blank" class="proj-btn">GitHub</a>
+                        <a href="#" onclick="alert('Add your live demo link here')" class="proj-btn">See Output</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(`modal-${id}`);
+    if (modal) modal.remove();
+}
+
+
+
+
+
+
+
 /*  gallery lightbox*/
 
 const galleryCards = [...document.querySelectorAll('.gallery-card')];
