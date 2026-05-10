@@ -803,14 +803,12 @@ section {
 
 .about .about-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 60px;
 }
 
 .about .about-content .left {
-    width: 45%;
+    flex: 0 0 380px;
     display: flex;
     justify-content: center;
 }
@@ -830,7 +828,8 @@ section {
 }
 
 .about .about-content .right {
-    width: 55%;
+    flex: 1;
+    min-width: 0;
 }
 
 .about .about-content .right .text {
@@ -852,7 +851,9 @@ section {
 }
 
 .about .about-content .right a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: rgba(180, 60, 0, 0.3);
     color: #f0c090;
     font-size: 18px;
@@ -872,7 +873,65 @@ section {
     text-shadow: 0 0 12px rgba(255, 120, 0, 0.5);
 }
 
+/* About info grid */
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 24px;
+    margin: 24px 0 28px;
+    padding: 22px 24px;
+    background: rgba(18, 6, 0, 0.6);
+    border: 1px solid rgba(180, 60, 0, 0.2);
+    border-radius: 12px;
+}
 
+.about-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a4020;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-value {
+    font-size: 14px;
+    color: #f0c090;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+    }
+    .about .about-content .left {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+    .about .about-content .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-info {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .about .about-content .left img {
+        width: 280px;
+        height: 280px;
+    }
+}
 
 
 
@@ -1117,6 +1176,18 @@ section {
     filter: drop-shadow(0 0 4px rgba(255, 120, 0, 0.15));
     transition: filter 0.3s ease;
 }
+
+.skill-front i {
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    filter: drop-shadow(0 0 6px rgba(255, 120, 0, 0.18));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover .skill-front i {
+    filter: drop-shadow(0 0 10px rgba(255, 140, 0, 0.45));
+    transform: scale(1.08);
+}
+
 /* back face */
 .skill-back {
     background: rgba(160, 50, 0, 0.22);

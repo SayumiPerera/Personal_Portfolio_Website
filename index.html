@@ -12,16 +12,21 @@
 
     <link rel="icon" type="image/x-icon" href="assets/ssp_2_1.jpg">
 
+
     <link rel="stylesheet" href="assets/lib/normalize.css">
-    <link rel="stylesheet" href="https://www.hxstrive.com/cdn/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--   <link rel="stylesheet" href="lib/fontawesome-free-7.2.0-web/css/all.min.css">-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
@@ -251,18 +256,47 @@
 
 <!-- about section -->
 
-<!-- About section title -->
 <section class="about" id="about">
     <div class="max-width">
         <h2 class="title">About Me</h2>
-        <div class="about-content"> <div class="column left">
-            <img src="assets/about_photo.png" alt="About photo">
-        </div>
-            <div class="column right">
-                <div class="text">I'm Sayumi and I'm a <span> Software Engineering student</span></div>
-                <p>"I am a driven Software Engineering student with a passion for building scalable web applications and solving complex algorithmic challenges. Combining strong academic foundations with hands-on experience in MERN stack development and cloud technologies, I thrive on turning ideas into functional code. As a proactive learner and eager problem-solver, I am looking to contribute my skills in full-stack development to a dynamic team and create technology that makes an impact".</p>
-                <a href="#">Download CV</a>
+        <div class="about-content">
+
+            <!-- LEFT: photo -->
+            <div class="column left">
+                <img src="assets/about_photo.png" alt="About photo">
             </div>
+
+            <!-- RIGHT: all text content -->
+            <div class="column right">
+                <div class="text">I'm Sayumi and I'm a <span>Software Engineering Student</span></div>
+
+                <p>"I am a driven Software Engineering student with a passion for building scalable web applications and solving complex algorithmic challenges. Combining strong academic foundations with hands-on experience in MERN stack development and cloud technologies, I thrive on turning ideas into functional code."</p>
+
+                <!-- Info rows -->
+                <div class="about-info">
+                    <div class="about-info-item">
+                        <span class="about-label">Name</span>
+                        <span class="about-value">Sayumi Perera</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="about-label">Degree</span>
+                        <span class="about-value">HDSE — Software Engineering</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="about-label">Email</span>
+                        <span class="about-value">sayumiperera18@gmail.com</span>
+                    </div>
+                    <div class="about-info-item">
+                        <span class="about-label">From</span>
+                        <span class="about-value">Kalutara, Sri Lanka</span>
+                    </div>
+                </div>
+
+                <a href="assets/My%20CV-Sayumi%20Perera.pdf" download="My%20CV-Sayumi%20Perera.pdf" target="_blank">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -278,52 +312,52 @@
 <!--Education section-->
 
 <section class="education" id="education">
-    <h2 class="title">Education</h2>
+    <h2 class="title" data-aos="fade-down">Education</h2>
 
     <div class="timeline-items">
 
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2025 – Present (2 Yrs)</div>
-            <div class="timeline-content">
+            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="timeline-date" data-aos="zoom-in-left" data-aos-delay="200">2025 – Present (2 Yrs)</div>
+            <div class="timeline-content" data-aos="zoom-in-left" data-aos-delay="300">
                 <h3>Higher Diploma in Software Engineering</h3>
                 <p>IJSE — Institute of Software Engineering (HDSE)</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2024 (6 months)</div>
-            <div class="timeline-content">
+            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="timeline-date" data-aos="zoom-in-right" data-aos-delay="200">2024 (6 months)</div>
+            <div class="timeline-content" data-aos="zoom-in-right" data-aos-delay="300">
                 <h3>Diploma in Information Technology — Level 3</h3>
                 <p>ESOFT Metro College (DIIT)</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2021 – 2023 (2024)</div>
-            <div class="timeline-content">
+            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="timeline-date" data-aos="zoom-in-left" data-aos-delay="200">2021 – 2023 (2024)</div>
+            <div class="timeline-content" data-aos="zoom-in-left" data-aos-delay="300">
                 <h3>G.C.E. Advanced Level — Physical Science Stream</h3>
                 <p>Agamethi Balika National School</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2019 – 2020 (2021)</div>
-            <div class="timeline-content">
+            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="timeline-date" data-aos="zoom-in-right" data-aos-delay="200">2019 – 2020 (2021)</div>
+            <div class="timeline-content" data-aos="zoom-in-right" data-aos-delay="300">
                 <h3>G.C.E. Ordinary Level</h3>
                 <p>Agamethi Balika National School</p>
             </div>
         </div>
 
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">2012 – 2018</div>
-            <div class="timeline-content">
+            <div class="timeline-dot" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="timeline-date" data-aos="zoom-in-left" data-aos-delay="200">2012 – 2018</div>
+            <div class="timeline-content" data-aos="zoom-in-left" data-aos-delay="300">
                 <h3>ESOL Examinations — Certificate Level B2</h3>
-                <p>University of Cambridge  (Cambridge English Level B2 Certificate in ESOL International) </p>
+                <p>University of Cambridge (Cambridge English Level B2 Certificate in ESOL International)</p>
             </div>
         </div>
 
@@ -345,7 +379,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <i class="fa-brands fa-html5" style="color:#E44D26;"></i>
                 </div>
                 <div class="skill-back"><span>HTML5</span></div>
             </div>
@@ -354,7 +388,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i>
                 </div>
                 <div class="skill-back"><span>CSS3</span></div>
             </div>
@@ -363,7 +397,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <i class="fa-brands fa-js" style="color:#F7DF1E;"></i>
                 </div>
                 <div class="skill-back"><span>JavaScript</span></div>
             </div>
@@ -372,7 +406,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <i class="fa-brands fa-java" style="color:#5382a1;"></i>
                 </div>
                 <div class="skill-back"><span>Java</span></div>
             </div>
@@ -381,7 +415,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <i class="fa-brands fa-python" style="color:#3776AB;"></i>
                 </div>
                 <div class="skill-back"><span>Python</span></div>
             </div>
@@ -390,7 +424,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <i class="fa-solid fa-database" style="color:#4479A1;"></i>
                 </div>
                 <div class="skill-back"><span>MySQL</span></div>
             </div>
@@ -399,7 +433,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <i class="fa-brands fa-git-alt" style="color:#F05032;"></i>
                 </div>
                 <div class="skill-back"><span>Git</span></div>
             </div>
@@ -408,7 +442,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    <i class="fa-brands fa-github" style="color:#f0c090;"></i>
                 </div>
                 <div class="skill-back"><span>GitHub</span></div>
             </div>
@@ -417,7 +451,7 @@
         <div class="skill-card">
             <div class="skill-inner">
                 <div class="skill-front">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <i class="fa-brands fa-figma" style="color:#F24E1E;"></i>
                 </div>
                 <div class="skill-back"><span>Figma</span></div>
             </div>
@@ -788,7 +822,7 @@
     <p class="gallery-hint">&#8592;&nbsp; drag to explore &nbsp;&#8594;</p>
 </section>
 
-<!-- lightbox overlay (appears when a card is clicked) -->
+<!-- lightbox overlay  -->
 <div class="lightbox" id="lightbox">
     <button class="lightbox-close" id="lightboxClose">&#10005;</button>
     <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
@@ -798,8 +832,6 @@
         <span id="lightboxCaption"></span>
     </div>
 </div>
-
-</section>
 
 
 
@@ -848,7 +880,7 @@
                         </div>
                     </div>
 
-                    <!-- Social links — added below email row -->
+                    <!-- Social links -->
                     <div class="row contact-social-row">
                         <div class="contact-social">
                             <a href="https://www.linkedin.com/in/sayumi-perera-322a30345/" target="_blank" aria-label="LinkedIn">
@@ -907,12 +939,16 @@
 
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
 
 <script src="script.js"></script>
-
-
-
-
 
 </body>
 </html>
