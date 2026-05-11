@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     overflow-x: hidden;
     background: #0a0300;
     color: #c08060;
@@ -20,6 +20,79 @@ body {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+
+
+/* ── Spooky Font Overrides ── */
+
+/* LOGO — SSP18 */
+.navbar .logo a {
+    font-family: 'Creepster', cursive;
+    font-size: 34px;
+    letter-spacing: 4px;
+}
+
+/* ALL SECTION TITLES */
+.title {
+    font-family: 'Creepster', cursive;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+/* HOME — "SAYUMI PERERA" */
+.home-left .text-2 {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 3px;
+}
+
+/* HOME — "Hi, I'm" */
+.home-left .text-1 {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 4px;
+}
+
+/* HOME — "Software Engineering Student" subtitle */
+.home-left .text-3 span {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 2px;
+}
+
+/* ABOUT — heading text */
+.about .about-content .right .text {
+    font-family: 'Creepster', cursive;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* CONTACT — "Get in Touch" / "Message me" */
+.contact .contact-content .text {
+    font-family: 'Creepster', cursive;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+/* DOOR LABEL */
+.door-label h2 {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 6px;
+}
+.door-label h4 {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 2px;
+}
+
+/* PROJECT / SERVICE card titles */
+.project-info h3,
+.service-card h3 {
+    font-family: 'Creepster', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+footer {
+    font-family: 'Caesar Dressing', cursive;
+    letter-spacing: 2px;
 }
 
 
@@ -380,7 +453,7 @@ canvas#ghost-cursor {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(180, 60, 0, 0.25);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     box-shadow: 0 4px 30px rgba(0,0,0,0.6);
     z-index: 999;
 }
@@ -430,7 +503,10 @@ canvas#ghost-cursor {
 }
 
 .menu-btn {
-    color: #e07030; font-size: 24px; cursor: pointer; display: none;
+    color: #e07030;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar .menu.open {
@@ -452,7 +528,7 @@ canvas#ghost-cursor {
 }
 
 
-/* ── Navbar social icons ── */
+/* Navbar social icons */
 .nav-social {
     display: flex;
     align-items: center;
@@ -478,7 +554,7 @@ canvas#ghost-cursor {
 /*home*/
 .home {
     position: relative;
-    min-height: 100vh;           /* grows if content is taller */
+    min-height: 100vh;
     background: #0a0300;
     display: flex;
     align-items: stretch;
@@ -582,7 +658,7 @@ canvas#ghost-cursor {
     justify-content: center;
     font-size: 11px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     letter-spacing: 0.5px;
     border-radius: 4px;
     cursor: default;
@@ -772,7 +848,7 @@ section {
     font-weight: 600;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     color: #f0c090;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -810,7 +886,7 @@ section {
 /*about*/
 
 .about {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
 }
 
 .about .title::after {
@@ -1065,7 +1141,7 @@ section {
     padding: 22px 28px;
     border-radius: 14px;
     box-shadow: 0 0 14px rgba(200, 70, 0, 0.18),
-            inset 0 0 18px rgba(0, 0, 0, 0.35);
+    inset 0 0 18px rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1188,7 +1264,7 @@ section {
     width: 55%;
     height: 55%;
     object-fit: contain;
-    /* make GitHub (black svg) visible on dark bg */
+
     filter: drop-shadow(0 0 4px rgba(255, 120, 0, 0.15));
     transition: filter 0.3s ease;
 }
@@ -1217,7 +1293,7 @@ section {
     gap: 0;
 }
 .skill-back span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     font-size: clamp(11px, 1.4vw, 14px);
     font-weight: 700;
     color: #ffcc88;
@@ -1529,7 +1605,7 @@ section {
 }
 .project-img--stock::after {
     content: "$ ./stock_manager";
-    font-family: 'Courier New', monospace;
+    font-family: 'Creepster', cursive;
     font-size: 15px;
     color: #e07030;
     text-shadow: 0 0 12px rgba(220,80,0,0.7);
@@ -1572,7 +1648,7 @@ section {
     font-weight: 900;
     letter-spacing: 4px;
     color: #e07030;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     text-shadow: 0 0 20px rgba(220,80,0,0.6);
 }
 .project-img--mvc::after {
@@ -1638,7 +1714,7 @@ section {
     border-radius: 6px;
     font-size: 13px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     letter-spacing: 0.5px;
     background: rgba(180, 60, 0, 0.25);
     color: #f0c090;
@@ -1888,7 +1964,7 @@ section {
 .gallery-caption {
     display: block;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     font-size: 11px;
     font-weight: 600;
     color: #7a4020;
@@ -2009,7 +2085,9 @@ section {
 
 /*contact*/
 
-.contact .title::after { content: "Get in touch"; }
+.contact .title::after {
+    content: "Get in touch";
+}
 
 .contact .contact-content {
     display: flex;
@@ -2019,7 +2097,9 @@ section {
     gap: 40px;
 }
 
-.contact .contact-content .column { width: calc(50% - 30px); }
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
 
 .contact .contact-content .text {
     font-size: 20px;
@@ -2035,7 +2115,9 @@ section {
     font-size: 15px;
 }
 
-.contact .contact-content .left .icons { margin: 16px 0; }
+.contact .contact-content .left .icons {
+    margin: 16px 0;
+}
 
 .contact .contact-content .row {
     display: flex;
@@ -2043,7 +2125,9 @@ section {
     align-items: center;
 }
 
-.contact .contact-content .row .info { margin-left: 20px; }
+.contact .contact-content .row .info {
+    margin-left: 20px;
+}
 
 .contact .contact-content .row i {
     font-size: 24px;
@@ -2066,7 +2150,9 @@ section {
 }
 
 /* Contact Form */
-.contact .right form .fields { display: flex; gap: 16px; }
+.contact .right form .fields {
+    display: flex; gap: 16px;
+}
 
 .contact .right form .field,
 .contact .right form .fields .field {
@@ -2091,7 +2177,7 @@ section {
     outline: none;
     padding: 0 16px;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     color: #f0c090;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2129,7 +2215,7 @@ section {
     cursor: pointer;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
 }
 
 .contact .right form .button button:hover {
@@ -2185,7 +2271,7 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(180, 60, 0, 0.2);
     color: #5a3020;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -2346,8 +2432,8 @@ footer span a:hover {
     }
 
     .door-wrap {
-    width: min(78vw, 260px); height: min(84vh, 580px);
-     }
+        width: min(78vw, 260px); height: min(84vh, 580px);
+    }
 
     .title {
         font-size: 28px;
