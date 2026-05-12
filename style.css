@@ -482,10 +482,10 @@ canvas#ghost-cursor {
 }
 
 .navbar .menu li a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Creepster', cursive;
     color: #b07050;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     margin-left: 28px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -851,7 +851,7 @@ section {
     font-weight: 400;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family:  'Montserrat', sans-serif;
+    font-family:  'Creepster', cursive;
     color: #f0c090;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1216,7 +1216,7 @@ section {
 .skills .title::after {
     content: "What I know";
 }
-/* grid — 5 columns on desktop, shrinks responsively */
+
 .skills-grid {
     max-width: 900px;
     margin: 0 auto;
@@ -1297,8 +1297,8 @@ section {
 }
 .skill-back span {
     font-family: 'Creepster', cursive;
-    font-size: clamp(11px, 1.4vw, 14px);
-    font-weight: 700;
+    font-size: clamp(14px, 1.4vw, 15px);
+    font-weight: 500;
     color: #ffcc88;
     letter-spacing: 1px;
     text-align: center;
@@ -1374,7 +1374,7 @@ section {
     line-height: 1.7;
 }
 
-/* 2 column grid */
+
 .service-grid {
     max-width: 1000px;
     margin: 0 auto;
@@ -1461,8 +1461,8 @@ section {
 }
 /* card title */
 .service-card h3 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
     color: #f0c090;
     margin-bottom: 12px;
     letter-spacing: 0.5px;
@@ -1555,7 +1555,7 @@ section {
     scroll-behavior: smooth;
     cursor: grab;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;           /* Firefox */
+    scrollbar-width: none;
 }
 .projects-strip::-webkit-scrollbar {
     display: none;
@@ -1599,7 +1599,7 @@ section {
 .project-card:hover .project-img {
     transform: scale(1.07);
 }
-/* placeholder visuals for each project (replace with real screenshots) */
+/* placeholder visuals for each project  */
 .project-img--stock {
     background: linear-gradient(135deg, #0d0200 0%, #1a0800 40%, #2a1200 100%);
     display: flex;
@@ -1609,10 +1609,11 @@ section {
 .project-img--stock::after {
     content: "$ ./stock_manager";
     font-family: 'Creepster', cursive;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 500;
     color: #e07030;
     text-shadow: 0 0 12px rgba(220,80,0,0.7);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .project-img--connect4 {
     background: linear-gradient(135deg, #0a0300 0%, #1c0a00 50%, #2d1400 100%);
@@ -1680,8 +1681,8 @@ section {
 }
 .project-tag {
     display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #c06030;
@@ -1692,8 +1693,8 @@ section {
     margin-bottom: 14px;
 }
 .project-info h3 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
     color: #f0c090;
     margin-bottom: 10px;
     line-height: 1.35;
@@ -1716,7 +1717,7 @@ section {
     padding: 8px 18px;
     border-radius: 6px;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 300;
     font-family: 'Creepster', cursive;
     letter-spacing: 0.5px;
     background: rgba(180, 60, 0, 0.25);
@@ -1811,7 +1812,7 @@ section {
 
 
 
-
+/*assignments*/
 
 .assign-preview-grid,
 .assign-full-grid {
@@ -2106,7 +2107,7 @@ section {
 
 .contact .contact-content .text {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 12px;
     color: #f0c090;
 }
@@ -2139,7 +2140,7 @@ section {
 }
 
 .contact .contact-content .info .head {
-    font-weight: 600;
+    font-weight: 500;
     color: #c07040;
     font-size: 14px;
     letter-spacing: 1px;
@@ -2212,13 +2213,13 @@ section {
     background: rgba(180, 60, 0, 0.4);
     border: 2px solid rgba(220, 90, 0, 0.6);
     color: #f0c090;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 300;
     border-radius: 6px;
     cursor: pointer;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    font-family:  'Montserrat', sans-serif;
+    font-family:  'Creepster', cursive;
 }
 
 .contact .right form .button button:hover {
@@ -2229,7 +2230,7 @@ section {
 }
 
 
-/* ── Contact social icons ── */
+/* Contact social icons*/
 .contact-social-row {
     height: auto !important;
     padding: 8px 0;
